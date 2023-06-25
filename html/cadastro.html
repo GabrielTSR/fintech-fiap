@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-6">
+          <h1 class="text-center">CADASTRE-SE</h1>
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="fullName">Nome completo:</label>
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="fullName"
+                placeholder="Digite seu nome completo"
+              />
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Data de nascimento:</label>
+              <input type="date" required class="form-control" id="birthdate" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                required
+                class="form-control"
+                id="email"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Senha:</label>
+              <input
+                type="password"
+                required
+                class="form-control"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <div class="form-group row justify-content-between text-right">
+              <div class="col">
+                <a class="link" href="./login.html">Já possuo uma conta</a>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                id="signupBtn"
+              >
+                CADASTRAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document
+        .getElementById('signupForm')
+        .addEventListener('submit', function (event) {
+          event.preventDefault()
+
+          alert('Formulário de cadastro validado. Você clicou em cadastrar!')
+        })
+    </script>
+  </body>
+</html>

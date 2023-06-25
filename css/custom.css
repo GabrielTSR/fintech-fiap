@@ -1,0 +1,23 @@
+:root {
+  --background: #151519;
+  --text-light: #ffffff;
+  --input-background: #1d1d20;
+  --input-text: #cccccc;
+  --medium-green: #45b578;
+  --light-green: #4deb96;
+}
+
+html body {
+  background-color: var(--background);
+  color: var(--text-light);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link {
+  color: var(--light-green);
+}
+
+.btn-primary {
+  background-color: var(--medium-green) !important;
+}
